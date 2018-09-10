@@ -11789,7 +11789,10 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><a id='intro'></a></p>
-<h2 id="Introduction">Introduction<a class="anchor-link" href="#Introduction">&#182;</a></h2><p>I chose to analyze the no show appointments data to determine whether or not patients show up to their appointments. The following are questions I plan on exploring: Does one gender have a higher no-show rate than the other? Is diabetes a factor in determining whether or not patients show up? Does scholarship affect appointments?</p>
+<h2 id="Introduction">Introduction<a class="anchor-link" href="#Introduction">&#182;</a></h2><blockquote><p><strong>Tip</strong>: In this section of the report, provide a brief introduction to the dataset you've selected for analysis. At the end of this section, describe the questions that you plan on exploring over the course of the report. Try to build your report around the analysis of at least one dependent variable and three independent variables. If you're not sure what questions to ask, then make sure you familiarize yourself with the dataset, its variables and the dataset context for ideas of what to explore.</p>
+<p>If you haven't yet selected and downloaded your data, make sure you do that first before coming back here. In order to work with the data in this workspace, you also need to upload it to the workspace. To do so, click on the jupyter icon in the upper left to be taken back to the workspace directory. There should be an 'Upload' button in the upper right that will let you add your data file(s) to the workspace. You can then click on the .ipynb file name to come back here.</p>
+</blockquote>
+<p>I chose to analyze the no show appointments data to determine whether or not patients show up to their appointments. The following are questions I plan on exploring: Does one gender have a higher no-show rate than the other? Is diabetes a factor in determining whether or not patients show up? Does scholarship affect appointments?</p>
 
 </div>
 </div>
@@ -12535,7 +12538,7 @@ Name: Diabetes, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[185]:</div>
+<div class="prompt input_prompt">In&nbsp;[143]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_diabetes</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Diabetes&#39;</span><span class="p">]</span>
@@ -12553,13 +12556,13 @@ Name: Diabetes, dtype: int64</pre>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[185]:</div>
+<div class="prompt output_prompt">Out[143]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;pandas.core.groupby.SeriesGroupBy object at 0x11135b278&gt;</pre>
+<pre>&lt;pandas.core.groupby.SeriesGroupBy object at 0x11a2f09e8&gt;</pre>
 </div>
 
 </div>
@@ -12923,18 +12926,17 @@ dtype: int64</pre>
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><a id='conclusions'></a></p>
 <h2 id="Conclusions">Conclusions<a class="anchor-link" href="#Conclusions">&#182;</a></h2><p>Note: The dataset only includes 2016 apppointments. The findings in this analysis do not include historical data or year-over-year trends.</p>
-<p>20.2% of total appointments resulted in a no-show, while 80.0% resulted in patients showing up. Based on these percentages, patients are highly
-likely to show up to their appointments.</p>
+<p>20.2% of total apppointments resulted in a no-show, while 80.0% resulted in patients showing up. Based on these percentages, patients are highly likely to show up to their appointments.</p>
 <p>20.3% of female appointments resulted in a no show, while 20.0% of male appointments were no-shows. Both male and female patients have the same no-show rates which means gender does not indicate likelihood of showing up to an appointment or not.</p>
 <p>Only 7.2% of patients had diabetes. 18.0% of diabetes appointments resulted in a no-show, while 20.4% of appointments without diabetes resulted in a no-show. Diabetes appointments only have a slightly lower no-show rate. There is no clear indication that diabetes affects no-show rates.</p>
-<p>9.8% of total appointments had scholarship. 23.7% of scholarship appointments resulted in a no-show, while 19.8% of appointments without scholarship were no-shows. There is no clear indication that scholarship affects whether or not patients show up.</p>
+<p>9.8% of total appointments had scholarship. 23.7% of scholarship appointments resulted in a no-show, while 19.8% of sppointments without scholarship were no-shows. There is no clear indication that scholarship affects whether or not patients show up.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[186]:</div>
+<div class="prompt input_prompt">In&nbsp;[170]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">subprocess</span> <span class="k">import</span> <span class="n">call</span>
@@ -12951,7 +12953,7 @@ likely to show up to their appointments.</p>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[186]:</div>
+<div class="prompt output_prompt">Out[170]:</div>
 
 
 
